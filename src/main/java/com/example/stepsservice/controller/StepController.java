@@ -20,10 +20,10 @@ public class StepController {
     @PostConstruct
     public void fillDB(){
         if(stepRepository.count() == 0){
-            stepRepository.save(new Step(1, "duck", true));
-            stepRepository.save(new Step(2, "duck", false));
-            stepRepository.save(new Step(1, "chicken", false));
-            stepRepository.save(new Step(2, "chicken", true));
+            stepRepository.save(new Step(1, "Duck", true));
+            stepRepository.save(new Step(2, "Duck", false));
+            stepRepository.save(new Step(1, "Chicken", false));
+            stepRepository.save(new Step(2, "Chicken", true));
         }
 
         System.out.println(stepRepository.findStepByFigure("duck"));
