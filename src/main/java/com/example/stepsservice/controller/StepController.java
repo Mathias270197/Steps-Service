@@ -24,6 +24,13 @@ public class StepController {
             stepRepository.save(new Step(2, "Duck", false));
             stepRepository.save(new Step(1, "Chicken", false));
             stepRepository.save(new Step(2, "Chicken", true));
+            stepRepository.save(new Step(1, "Apple", true));
+            stepRepository.save(new Step(2, "Apple", true));
+            stepRepository.save(new Step(3, "Apple", true));
+            stepRepository.save(new Step(1, "House", true));
+            stepRepository.save(new Step(2, "House", true));
+            stepRepository.save(new Step(3, "House", true));
+
         }
 
         System.out.println(stepRepository.findStepByFigure("duck"));
