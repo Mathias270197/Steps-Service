@@ -27,7 +27,6 @@ public class StepController {
             stepRepository.save(new Step(2, "House", false));
             stepRepository.save(new Step(3, "House", true));
             stepRepository.save(new Step(1, "Robot", true));
-            stepRepository.save(new Step(1, "Robot", true));
             stepRepository.save(new Step(2, "Robot", true));
             stepRepository.save(new Step(3, "Robot", false));
             stepRepository.save(new Step(4, "Robot", true));
